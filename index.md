@@ -1,3 +1,11 @@
+# 2022-10:
+
+- 80th: 
+
+
+
+&nbsp;
+
 # 2022-09:
 
 - 79th: [daily-practice/79th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2022/09/79th.md)
