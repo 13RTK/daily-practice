@@ -1,3 +1,7 @@
+# 2022-11:
+- 84th: [daily-practice/84th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2022/10/84th.md)
+
+&nbsp;
 # 2022-10:
 
 - 83rd: [daily-practice/83rd.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2022/10/83rd.md)
