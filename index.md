@@ -1,4 +1,5 @@
 # 2022-11:
+- 88th: [daily-practice/88th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2022/11/88th.md)
 - 87th: [daily-practice/87th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2022/11/87th.md)
 - 86th: [daily-practice/86th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2022/11/86th.md)
 - 85th: [daily-practice/85th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2022/11/85th.md)
