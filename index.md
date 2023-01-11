@@ -1,5 +1,6 @@
 # 2023-01:
 
+- 94th: [daily-practice/94th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/01/94th.md)
 - 93rd: [daily-practice/93rd.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/01/93rd.md)
 
 &nbsp;
