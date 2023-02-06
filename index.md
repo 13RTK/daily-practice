@@ -1,5 +1,6 @@
 # 2023-01:
 
+- 98th: [daily-practice/98th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/01/98th.md)
 - 97th: [daily-practice/97th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/01/97th.md)
 - 96th: [daily-practice/96th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/01/96th.md)
 - 95th: [daily-practice/95th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/01/95th.md)
