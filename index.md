@@ -1,3 +1,10 @@
+# 2023-04:
+
+- 107th: 
+- 106th: [daily-practice/106th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/04/106th.md)
+
+&nbsp;
+
 # 2023-03:
 
 - 105th: [daily-practice/105th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/03/105th.md)
