@@ -1,5 +1,6 @@
 # 2023-05:
 
+- 112nd: [daily-practice/112nd.md at main · 13RTK/daily-practice · GitHub](https://github.com/13RTK/daily-practice/blob/main/2023/05/112nd.md)
 - 111st: [daily-practice/111st.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/05/111st.md)
 - 110th: [daily-practice/110th.md at main · 13RTK/daily-practice (github.com)](https://github.com/13RTK/daily-practice/blob/main/2023/05/110th.md)
 
