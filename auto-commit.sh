@@ -34,13 +34,18 @@ function set_language() {
   fi
 }
 
-# 提交函数
+# 提交函数，根据参数判断是否在commit中使用模版
 function commit() {
-  git add .
-  git commit -m "$commit_msg"
-  git push $chosen_remote
+  git add ./
+  if [ "$1" == "y" ]; then
+    git commit -m "$commit_template"
+  else
+    git commit -m "$enter_commit_msg"
+  fi
 
+  git push -u $chosen_remote $chosen_branch
   echo "$commit_success"
+  exit 0
 }
 
 # 设置语言
@@ -93,20 +98,11 @@ if [ "$enable_template" == "n" ]; then
 
 # 使用模版
 else
-  git add ./
-  git commit -m "$commit_template"
-  git push -u $chosen_remote $chosen_branch
-
-  echo "$commit_success"
-  exit 0
+  commit "y"
 fi
 
 # 输入提交信息
 read -p "$enter_commit_msg" commit_msg
 
-# 添加所有更改的文件并进行提交
-git add ./
-git commit -m "$commit_msg"
-git push -u $chosen_remote $chosen_branch
-
-echo "$commit_success"
+# 调用提交函数进行提交
+commit "n"
