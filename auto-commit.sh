@@ -14,6 +14,9 @@ function set_language() {
     commit_canceled="已取消自动提交。"
     enter_commit_msg="请输入提交信息："
     commit_success="提交成功！"
+    enable_template="是否使用提交模版 (y/n)："
+    not_use_template="不使用模版"
+    commit_template="$(date) 由Alex更新"
   else
     not_git_repo="The current directory is not a git repository."
     current_repo_info="Current repository information:"
@@ -25,7 +28,19 @@ function set_language() {
     commit_canceled="Auto-commit canceled."
     enter_commit_msg="Please enter the commit message:"
     commit_success="Commit successful!"
+    enable_template="Do you want to use the commit template (y/n)?"
+    not_use_template="Not use template"
+    commit_template="$(date) by Alex"
   fi
+}
+
+# 提交函数
+function commit() {
+  git add .
+  git commit -m "$commit_msg"
+  git push $chosen_remote
+
+  echo "$commit_success"
 }
 
 # 设置语言
@@ -50,6 +65,8 @@ if [ $local_branches -gt 1 ]; then
   git branch
   read -p "$enter_branch_name" chosen_branch
   git checkout $chosen_branch
+else
+  chosen_branch=$(git branch | grep '*' | awk '{print $2}')
 fi
 
 # 判断是否存在多个远程仓库
@@ -69,12 +86,27 @@ if [ "$confirm" != "y" ]; then
   exit 0
 fi
 
+# 提示是否需要使用提交模版
+read -p "$enable_template" enable_template
+if [ "$enable_template" == "n" ]; then
+  echo "$not_use_template"
+
+# 使用模版
+else
+  git add ./
+  git commit -m "$commit_template"
+  git push -u $chosen_remote $chosen_branch
+
+  echo "$commit_success"
+  exit 0
+fi
+
 # 输入提交信息
 read -p "$enter_commit_msg" commit_msg
 
 # 添加所有更改的文件并进行提交
-git add .
+git add ./
 git commit -m "$commit_msg"
-git push $chosen_remote
+git push -u $chosen_remote $chosen_branch
 
 echo "$commit_success"
