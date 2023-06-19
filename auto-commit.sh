@@ -95,7 +95,6 @@ fi
 read -p "$enable_template" enable_template
 if [ "$enable_template" == "n" ]; then
   echo "$not_use_template"
-
 # 使用模版
 else
   commit "y"
