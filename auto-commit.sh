@@ -30,7 +30,7 @@ function set_language() {
     commit_success="Commit successful!"
     enable_template="Do you want to use the commit template (y/n)?"
     not_use_template="Not use template"
-    commit_template="$(date) by Alex"
+    commit_template="$(date) update by Alex"
   fi
 }
 
