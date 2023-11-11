@@ -38,7 +38,7 @@ function inorderTraversalStack(root: TreeNode | null): number[] {
             root = root.left;
         }
 
-        const popNode: TreeNode = stack.pop() || new TreeNode();
+        const popNode: TreeNode = stack.pop()!;
         resArr.push(popNode.val);
 
         root = popNode.right;

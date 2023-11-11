@@ -31,7 +31,7 @@ function preorderTraversalStack(root: TreeNode | null): number[] {
     const stack: TreeNode[] = [root];
 
     while (stack.length) {
-        const curNode: TreeNode = stack.pop();
+        const curNode: TreeNode = stack.pop()!;
         resArr.push(curNode.val);
 
         curNode.right && stack.push(curNode.right);
