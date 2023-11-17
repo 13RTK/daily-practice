@@ -105,3 +105,15 @@
 # Day020
 
 ![image-20231115150056556](./assets/image-20231115150056556.png)
+
+&nbsp;
+
+# Day021
+
+![psc](./assets/psc.png)
+
+&nbsp;
+
+# Day022
+
+![image-20231117132523274](./assets/image-20231117132523274.png)
