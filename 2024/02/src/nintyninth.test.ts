@@ -1,19 +1,11 @@
-function minCostClimbingStairs(cost: number[]): number {
-  const stepCost: number[] = [0, 0];
+function uniquePaths(m: number, n: number): number {
+  const pathCount: number[] = new Array(n).fill(1);
 
-  cost.forEach((curCost, idx, arr) => {
-    if (idx === arr.length - 1) {
-      return;
+  for (let row = 1; row < m; row++) {
+    for (let col = 1; col < n; col++) {
+      pathCount[col] += pathCount[col - 1];
     }
+  }
 
-    const curMinCost: number = Math.min(
-      curCost + stepCost[0],
-      arr[idx + 1] + stepCost[1]
-    );
-
-    stepCost[0] = stepCost[1];
-    stepCost[1] = curMinCost;
-  });
-
-  return stepCost[1];
+  return pathCount.at(-1)!;
 }
