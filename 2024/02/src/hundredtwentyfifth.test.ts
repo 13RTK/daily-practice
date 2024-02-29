@@ -1,23 +1,28 @@
-function countSubstrings(s: string): number {
-  let res: number = 0;
+function minDistance(word1: string, word2: string): number {
+  const dp: number[][] = new Array(word1.length + 1)
+    .fill([])
+    .map((_val, row) => {
+      if (row === 0) {
+        return Array.from({ length: word2.length + 1 }, (_val, idx) => idx);
+      }
 
-  for (let idx = 0; idx < s.length; idx++) {
-    res += countPalindrome(s, idx, idx);
-    res += countPalindrome(s, idx, idx + 1);
+      return new Array(word2.length + 1)
+        .fill(0)
+        .map((val, idx) => (idx === 0 ? row : val));
+    });
+
+  for (let row = 1; row <= word1.length; row++) {
+    for (let col = 1; col <= word2.length; col++) {
+      if (word1[row - 1] === word2[col - 1]) {
+        dp[row][col] = dp[row - 1][col - 1];
+      } else {
+        dp[row][col] = Math.min(
+          dp[row - 1][col - 1] + 1,
+          Math.min(dp[row][col - 1], dp[row - 1][col]) + 1
+        );
+      }
+    }
   }
 
-  return res;
+  return dp.at(-1)!.at(-1)!;
 }
-
-const countPalindrome = (str: string, left: number, right: number) => {
-  let res: number = 0;
-
-  while (left >= 0 && right < str.length && str[left] === str[right]) {
-    res++;
-
-    left--;
-    right++;
-  }
-
-  return res;
-};
